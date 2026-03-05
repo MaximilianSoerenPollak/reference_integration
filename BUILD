@@ -13,6 +13,13 @@
 
 load("@score_docs_as_code//:docs.bzl", "docs")
 
+filegroup(
+    name = "known_good",
+    srcs =["known_good.json"],
+    visibility = ["//visibility:public"],
+)
+exports_files(["known_good.json"])
+
 docs(
     data = [
         # Software components
@@ -31,4 +38,5 @@ docs(
         "@score_docs_as_code//:needs_json",
     ],
     source_dir = "docs",
+    known_good = ":known_good"
 )

@@ -137,11 +137,8 @@
                 "hash": "c3d385c8e5562b594a409e92a8f493207b53b49d"
             },
             "score_docs_as_code": {
-                "repo": "https://github.com/eclipse-score/docs-as-code.git",
-                "hash": "7349eb22430febb367765ced3fbabfc0ef2988d0",
-                "bazel_patches": [
-                    "//patches/docs-as-code:fix-extra-properties.patch"
-                ]
+                "repo": "https://github.com/maximiliansoerenpollak/docs-as-code.git",
+                "hash": "57f869b4a15954f4e347418b4bccdf7b05949ad4"
             },
             "score_process": {
                 "repo": "https://github.com/eclipse-score/process_description.git",

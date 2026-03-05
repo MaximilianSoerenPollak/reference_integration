@@ -57,14 +57,18 @@ git_override(
 )
 
 bazel_dep(name = "score_docs_as_code")
+# local_path_override(
+#     module_name = "score_docs_as_code",
+#     path = "../docs-as-code/"
+# )
 git_override(
     module_name = "score_docs_as_code",
-    remote = "https://github.com/eclipse-score/docs-as-code.git",
-    commit = "7349eb22430febb367765ced3fbabfc0ef2988d0",
-    patches = [
-        "//patches/docs-as-code:fix-extra-properties.patch",
-    ],
-    patch_strip = 1,
+    remote = "https://github.com/maximiliansoerenpollak/docs-as-code.git",
+    commit = "5f9cd654ba0a5e80e28041903662cfcb72c2fa32",
+#     # patches = [
+#     #     "//patches/docs-as-code:fix-extra-properties.patch",
+#     # ],
+#     # patch_strip = 1,
 )
 
 bazel_dep(name = "score_process")
